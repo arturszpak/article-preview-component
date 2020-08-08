@@ -11,6 +11,11 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
 
     <title>Frontend Mentor | Article preview component</title>
 
@@ -26,17 +31,58 @@
     </style>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
+    <main class="main">
+      <article class="article-component">
+        <div class="article-img">
+          <img src="./images/drawers.jpg" alt="article-img" />
+        </div>
+        <div class="article-content">
+          <div class="article-description">
+            <h2 class="article-heading">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h2>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <div class="article-author">
+            <div class="article-author-avatar">
+              <img src="./images/avatar-michelle.jpg" alt="author-avatar" />
+            </div>
+            <div class="author-details">
+              <h4>Michelle Appleton</h4>
+              <p>28 Jun 2020</p>
+            </div>
+            <div class="share">
+              <button class="share-btn"></button>
+            </div>
+            <div class="article-socials visible">
+              <p>SHARE</p>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="./images/icon-facebook.svg" alt="fb"
+              /></a>
+              <a href="https://twitter.com/home" target="_blank"
+                ><img src="./images/icon-twitter.svg" alt="twitter"
+              /></a>
+              <a href="https://pl.pinterest.com/" target="_blank"
+                ><img src="./images/icon-pinterest.svg" alt="pinterest"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
 
-    <div class="attribution">
+    <!--<div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
+
+    <script src="./script.js"></script>
   </body>
 </html>
